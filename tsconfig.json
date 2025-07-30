@@ -3,5 +3,16 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "rules": {
+    "paths": {
+      "@app/*": ["app/*", "app/*/index"],
+      "@assets/*": ["assets/*", "assets/*/index"],
+      "@pages/*": ["pages/*", "pages/*/index"],
+      "@widgets/*": ["widgets/*", "widgets/*/index"],
+      "@features/*": ["features/*", "features/*/index"],
+      "@entities/*": ["entities/*", "entities/*/index"],
+      "@shared/*": ["shared/*", "shared/*/index"]
+    }
+  }
 }
